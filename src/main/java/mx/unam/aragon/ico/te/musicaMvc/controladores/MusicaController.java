@@ -26,7 +26,7 @@ public class MusicaController {
     }
     @GetMapping("/nuevo")
     public String nuevo(Model model){
-        model.addAttribute("artista", new Artista(0,"mbappe","rap",20,"goat", "httP://mbappe.com"));
+        model.addAttribute("artista", new Artista());
         return "formArtista";
     }
     @PostMapping("/guardar")
